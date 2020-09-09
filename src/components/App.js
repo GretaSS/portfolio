@@ -7,6 +7,7 @@ class App extends Component {
         return (
             <div>
                 <h1>My Clear React App! about portfolio </h1>
+                <p>Lorem</p>
             </div>
         );
     }
