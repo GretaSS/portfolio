@@ -3,9 +3,6 @@ import {View, Text} from "../../styled";
 import styled, { keyframes } from "styled-components"
 
 const show = keyframes`
-    from{
-        transform: translate(0px, 0px);
-    }
     to{
         transform: translate(200px, 200px);
     }
@@ -14,6 +11,7 @@ const show = keyframes`
 const MesAnimation = styled.div`
     position: relative;
     background-color: blue;
+    width: 500px;
     animation: ${show} 2s forwards;
 `;
 
