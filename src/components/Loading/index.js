@@ -1,6 +1,6 @@
 import React from "react";
-import {View, Text} from "../../styled";
-import styled, { keyframes } from "styled-components"
+import View from "../../styled/View";
+import styled, { keyframes } from "styled-components";
 
 const rotate = keyframes`
     to{
@@ -9,17 +9,19 @@ const rotate = keyframes`
 `;
 
 const LoadingAnimation = styled.div`
-    width: 500px;
-    position: relative;
-    background-color: green;
-    animation: ${rotate} 3s infinite ease-in-out;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-image: url("./src/assets/images/logo.svg");
+    animation: ${rotate} 2s infinite ease-in-out;
 `;
 
 function Loading(){
     return(
-        <LoadingAnimation>
-            HI
-        </LoadingAnimation>
+        <View flex alignI='center' justC='center'>
+            <LoadingAnimation/>
+        </View>
     )
 }
 

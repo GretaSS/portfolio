@@ -21,6 +21,7 @@ function Letter(){
             <Text c='aqua'>
                 Letter
             </Text>
+            
         </MesAnimation>
     )
 }
