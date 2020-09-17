@@ -1,17 +1,18 @@
 import React from "react";
-// import Letter from "./Letter";
 import Loading from "./Loading";
+// import Letter from "./Letter";
+// import FrontList from "./FrontList";
 import {View, Text} from "../styled";
 
 const Letter = React.lazy(() => import('./Letter') )
+const FrontList = React.lazy(() => import('./FrontList') )
 
 function App() {
     return (
         <React.Suspense fallback={<Loading/>}>
-            <View>
-                {/* <OtherComponent/> */}
-                <Letter/> 
-            </View>               
+            {/* <OtherComponent/> */}
+            {/* <Letter/>  */}
+            <FrontList/>
         </React.Suspense>
     );   
 }

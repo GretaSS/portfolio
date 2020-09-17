@@ -9,9 +9,10 @@ const show = keyframes`
 `;
 
 const MesAnimation = styled.div`
+    width: 200px;
+    height: 200px;
     position: relative;
     background-color: blue;
-    width: 500px;
     animation: ${show} 2s forwards;
 `;
 
@@ -21,7 +22,6 @@ function Letter(){
             <Text c='aqua'>
                 Letter
             </Text>
-            
         </MesAnimation>
     )
 }
