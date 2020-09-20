@@ -2,7 +2,8 @@ import React from "react";
 import Loading from "./Loading";
 // import Letter from "./Letter";
 // import FrontList from "./FrontList";
-import {View, Text} from "../styled";
+// import {View, Text} from "../styled";
+// import GlobalStyles from '../styled/globalStyles';
 
 const Letter = React.lazy(() => import('./Letter') )
 const FrontList = React.lazy(() => import('./FrontList') )
@@ -10,8 +11,8 @@ const FrontList = React.lazy(() => import('./FrontList') )
 function App() {
     return (
         <React.Suspense fallback={<Loading/>}>
-            {/* <OtherComponent/> */}
             {/* <Letter/>  */}
+            {/* <GlobalStyles/> */}
             <FrontList/>
         </React.Suspense>
     );   
