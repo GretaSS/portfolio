@@ -1,31 +1,40 @@
 import React from "react";
 import {View, Text} from "../../styled";
-// import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
-// const show = keyframes`
-//     to{
-//         transform: translate(200px, 200px);
-//     }
-// `;
+const MyImg = styled.img`
+    width: 150px;
+    height: 200px;
+`;
 
-// const MesAnimation = styled.div`
-//     width: 200px;
-//     height: 200px;
-//     position: relative;
-//     background-color: blue;
-//     animation: ${show} 2s forwards;
-// `;
+const Scroll = styled.div`
+    width: 100%;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    transition: 0.5s;
+    :hover&{
+        transform: translateY(10px);
+        color: black;
+    }
+`;
 
 function FrontList(){
     return(
-        <View flex justC='center' alignI='center' bgColor='yellow'>
-            <View w='400px'>
-                <img src='./src/assets/images/logo.svg'/>
+        <View flex fD='column' justC='center' alignI='center' bgColor='yellow'>
+            <View flex justC='center' alignI='center'>
+                <View w='100px' h='200px' bgImg="./src/assets/images/hands.jpg">
+                    {/* <MyImg src='./src/assets/images/hands.jpg'/> */}
+                </View>
+                <Text fontSize='40px' >
+                    Greta Simonyan
+                </Text>
             </View>
-            <Text fontSize='40px' >
-                Greta Simonyan
-            </Text>
-        </View>
+            <Scroll>
+                Scroll ↓↓↓
+            </Scroll>
+        </View>    
     )
 }
 
