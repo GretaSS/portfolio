@@ -1,19 +1,15 @@
 import React from "react";
-import Loading from "./Loading";
-// import Letter from "./Letter";
-// import FrontList from "./FrontList";
-// import {View, Text} from "../styled";
-// import GlobalStyles from '../styled/globalStyles';
+import Loading from "./components/Loading";
+import GlobalStyles from './styled/globalStyles';
 
-const Letter = React.lazy(() => import('./Letter') )
-const FrontList = React.lazy(() => import('./FrontList') )
+const Home = React.lazy(() => import('./pages/Home') )
 
 function App() {
     return (
         <React.Suspense fallback={<Loading/>}>
-            {/* <Letter/>  */}
-            {/* <GlobalStyles/> */}
-            <FrontList/>
+            {/* <Letter/>  sra het ka problem, chgitem home-ic a galu te voch*/}
+            <GlobalStyles/>
+            <Home/>
         </React.Suspense>
     );   
 }

@@ -3,8 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 // import ArvoBold from '../../src/assets/fonts/Arvo-Bold.ttf';
 // import ArvoRegular from '../../src/assets/fonts/Arvo-Regular.ttf';
 // import ArvoBoldItalic from '../../src/assets/fonts/Arvo-BoldItalic.ttf';
-// import PlayfairDisplayRegular from '../../src/assets/fonts/PlayfairDisplay-Regular.ttf';
-// import Grandstander '../../src/assets/fonts/Grandstander-Italic-VariableFont_wght.ttf';
+import Grandstander from '../../src/assets/fonts/static/Grandstander-Light.ttf';
 
 const GlobalStyles = createGlobalStyle`
   @font-face{
