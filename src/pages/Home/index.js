@@ -3,23 +3,24 @@ import React from "react";
 //     Cover,
 //     Header,
 //     About,
-//     // Skills,
-//     // ExpEd,
-//     // Portfolio,
-//     // Contact
+//     Skills,
+//     ExpEd,
+//     Portfolio,
+//     Contact
 // }from '../../components';
 
 // import Letter from '../../components/Letter';
 import FrontList from '../../components/FrontList';
+import About from '../../components/About';
 
 function Home (){
     return(
         <>
             {/* <Letter/> */}
             <FrontList/>
+            <About/>
             {/* <Cover/>
-            <Header/>
-            <About/> */}
+            <Header/> */}
             {/* <Skills/> */}
             {/* <ExpEd/> */}
             {/* <Portfolio/> */}

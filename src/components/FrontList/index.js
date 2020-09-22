@@ -25,9 +25,14 @@ function FrontList(){
                     bgImg="./src/assets/images/hands.jpg"
                 >
                 </View>
-                <Text fontSize='40px' c='white' fontF='`${GrReg}`'>
-                    Greta Simonyan
-                </Text>
+                <View flex fD='column' alignI='center'>
+                    <Text fontSize='40px' c='white'>
+                        Greta 
+                    </Text>
+                    <Text fontSize='40px' c='white'>
+                        Simonyan
+                    </Text>
+                </View>
             </View>
             <Scroll flex justC='center' w='100%' fontSize='40px'>
                 Scroll ↓↓↓

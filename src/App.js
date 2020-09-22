@@ -28,7 +28,6 @@ export default App;
 //         return (
 //             <View>
 //                 <Loading/>
-//                 <h1>My Clear React App! about portfolio </h1>
 //                 <Letter/>                
 //             </View>
 //         );
