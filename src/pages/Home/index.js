@@ -1,7 +1,6 @@
 import React from "react";
 // import {
 //     Cover,
-//     Header,
 //     About,
 //     Skills,
 //     ExpEd,
@@ -12,6 +11,7 @@ import React from "react";
 // import Letter from '../../components/Letter';
 import FrontList from '../../components/FrontList';
 import About from '../../components/About';
+import Contacts from '../../components/Contacts';
 
 function Home (){
     return(
@@ -19,12 +19,11 @@ function Home (){
             {/* <Letter/> */}
             <FrontList/>
             <About/>
-            {/* <Cover/>
-            <Header/> */}
+            <Contacts/>
+            {/* <Cover/> */}
             {/* <Skills/> */}
             {/* <ExpEd/> */}
             {/* <Portfolio/> */}
-            {/* <Contact/> */}
         </>
     )
 }
