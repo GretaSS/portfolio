@@ -12,7 +12,7 @@ function About(){
                 fD="column" 
                 alignI="center"
                 >
-                <View flex justC='center' alignI='center' c='#f8ad44c4'>
+                <View flex justC='center' alignI='center' c='orange'>
                     <GoPerson/>
                     <h1>About Me</h1>
                 </View>

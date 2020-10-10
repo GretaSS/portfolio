@@ -19,7 +19,7 @@ const Link = styled.a`
 
 function Contacts(){
     return(
-        <View flex justC='center' boxS='border-box' bgColor='blue'>
+        <View flex justC='center' boxS='border-box' bgColor='orange'>
             <Link href="https://github.com/GretaSS"><FiGithub/></Link>
             <Link href="https://www.linkedin.com/in/greta-simonyan-a20492158/"><FiLinkedin/></Link>
             <Link href="gsimonyan228@gmail.com"><FiMail/></Link>

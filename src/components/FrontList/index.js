@@ -35,8 +35,8 @@ function FrontList(){
                     </Text>
                 </View>
             </View>
-            <Scroll flex justC='center' w='100%' fontSize='40px'>
-                Scroll ↓↓↓
+            <Scroll flex justC='center' w='100%' op='0.7' fontSize='40px'>
+               ↓↓↓ Scroll ↓↓↓
             </Scroll>
         </View>    
     )
