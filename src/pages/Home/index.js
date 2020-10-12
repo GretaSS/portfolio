@@ -17,7 +17,7 @@ function Home (){
     return(
         <>
             {/* <Letter/> */}
-            <FrontList/>
+            {/* <FrontList/> */}
             <About/>
             <Contacts/>
             {/* <Cover/> */}
