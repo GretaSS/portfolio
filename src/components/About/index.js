@@ -5,13 +5,8 @@ import Interests from '../Interests';
 
 function About(){
     return(
-        <View id='about' flex justC='center' alignI='center' boxS='border-box'>
-            <View w='75%'
-                flex
-                p='9px' 
-                fD="column" 
-                alignI="center"
-                >
+        <View flex fD='column' justC='center' alignI='center' boxS='border-box'>
+            <View w='80%' flex p='10px 0' fD='column' alignI='center'>
                 <View flex justC='center' alignI='center' c='orange'>
                     <GoPerson/>
                     <h1>About Me</h1>
@@ -22,8 +17,8 @@ function About(){
                     university for a year, the topic of my diploma was "Developing an Automatic Fluid Controller", which I 
                     presented in Assembler programming language. It was rated excellent by the Admissions Committee․
                 </View>
-                <Interests/>
             </View>
+            <Interests/>
         </View>
     )
 }
