@@ -19,16 +19,13 @@ const Item = styled(View)`
 
 function Interests(){
     return(
-        <View flex w='100%' p='5px 0' alignI='center' justC='center' fD='column'>
-            <View c='orange' p='5px 0' fontSize='25px'>
-                Interests/Hobies
+        <View flex w='90%' p='5px 0' alignI='center' justC='center' fD='column'>
+            <View c='orange' fontSize='25px'>
+                <h1>Interests/Hobies</h1>
             </View>
-            <View flex w='100%' c='white' alignI='center' justC='space-around'>
+            <View flex w='100%' c='white' p='5px 0' alignI='center' justC='space-around'>
                 <Item bgImg='./src/assets/images/photography.jpg'>
-                    <Text>
-                        Photography
-                    </Text>
-                    
+                    Photography
                 </Item>
                 <Item bgImg='./src/assets/images/dr2.jpg'>
                     Drawing
