@@ -5,7 +5,7 @@ import styled, { keyframes } from "styled-components";
 
 const scr = keyframes`
     to{
-        transform: translateY(20px);
+        transform: translateY(25px);
         color: #ececec;
     }
 `;
@@ -17,7 +17,7 @@ const Scroll = styled(View)`
 
 function FrontList(){
     return(
-        <View flex h='97vh' fD='column' justC='space-around' alignI='center' bgColor='#ff9800'>
+        <View flex h='99vh' fD='column' justC='space-around' alignI='center' bgColor='#ff9800'>
             <View w='50%' flex justC='space-around' alignI='center' >
                 <View w='200px' 
                     h='250px' 
@@ -35,7 +35,7 @@ function FrontList(){
                     </Text>
                 </View>
             </View>
-            <Scroll flex justC='center' w='100%' op='0.7' fontSize='40px'>
+            <Scroll flex justC='center' w='100%' op='0.5' fontSize='40px'>
                ↓↓↓ Scroll ↓↓↓
             </Scroll>
         </View>    
