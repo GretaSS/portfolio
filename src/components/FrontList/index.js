@@ -28,7 +28,7 @@ function FrontList(){
                 </View>
                 <View flex fD='column' alignI='center'>
                     <Text fontSize='40px' c='white'>
-                        Greta 
+                        Greta
                     </Text>
                     <Text fontSize='40px' c='white'>
                         Simonyan
