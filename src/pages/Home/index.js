@@ -12,11 +12,13 @@ import React from "react";
 import FrontList from '../../components/FrontList';
 import About from '../../components/About';
 import Contacts from '../../components/Contacts';
+import Menu from '../../components/Menu';
 
 function Home (){
     return(
         <>
             {/* <Letter/> */}
+            <Menu/>
             <FrontList/>
             <About/>
             <Contacts/>
