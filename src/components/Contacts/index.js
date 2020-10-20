@@ -12,9 +12,8 @@ const Link = styled.a`
     margin: 8px;
     padding: 5px;
     color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-    fontSize: 17px;
+    // text-decoration: none;
+    // fontSize: 17px;
 `;
 
 function Contacts(){

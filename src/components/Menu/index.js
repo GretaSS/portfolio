@@ -1,58 +1,56 @@
 import React from "react";
 import {View, Text} from "../../styled";
-// import styled, { keyframes } from "styled-components";
-import {GoPerson} from "react-icons/go"; //about me
-import {GoMortarBoard} from "react-icons/go"; //education
+import styled from "styled-components";
+import {GoPerson,GoMortarBoard} from "react-icons/go"; //about,education
+import {RiPaletteLine} from "react-icons/ri"; //interests
+import {FiPhone,FiFolder} from "react-icons/fi"; //contacts,portfolio
 
-// const scr = keyframes`
-//     to{
-//         transform: translateY(25px);
-//         color: #ececec;
-//     }
-// `;
+const MenuItem = styled.a`
+    color: white;
+    display: flex;
+    align-item: center;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 5px 0px 0px 2px;
+    &:hover{
+        cursor: pointer;
+        transform: translateX(1px);
+    }
+`;
 
-// const Scroll = styled(View)`
-//     color: white;
-//     animation: ${scr} 1s infinite;
-// `;
 
 function Menu(){
     return(
         <View flex 
-            fD='column' 
-            bgColor='#ffb226'
-            pos='fixed'
             z='99'
-            p='10px 5px'
-            boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'
-            bRad='0px 25px 25px 0px'
             top='30%'
-            c='white'
+            fD='column' 
+            pos='fixed'
+            p='10px 5px'
+            bgColor='#ffb226'
+            bRad='0px 25px 25px 0px'
+            boxSh='0px 11px 32px -9px rgba(0, 0, 0, 0.4)'
         >
-            <View flex alignI='center' p='5px 0px 0px 2px'>
+            <MenuItem href='#'>
                 <GoPerson/>
                 <Text>About Me</Text>
-            </View>
-            <View flex alignI='center' p='5px 0px 0px 2px'>
+            </MenuItem>
+            <MenuItem href='#'>
                 <GoMortarBoard/>
                 <Text>Education</Text>
-            </View>
-            <View flex alignI='center' p='5px 0px 0px 2px'>
-                <GoPerson/>
-                <Text>About Me</Text>
-            </View>
-            <View flex alignI='center' p='5px 0px 0px 2px'>
-                <GoMortarBoard/>
-                <Text>Education</Text>
-            </View>
-            <View flex alignI='center' p='5px 0px 0px 2px'>
-                <GoPerson/>
-                <Text>About Me</Text>
-            </View>
-            <View flex alignI='center' p='5px 0px 0px 2px'>
-                <GoMortarBoard/>
-                <Text>Education</Text>
-            </View>
+            </MenuItem>
+            <MenuItem href='#'>
+                <RiPaletteLine/>
+                <Text>Interests</Text>
+            </MenuItem>
+            <MenuItem href='#'>
+                <FiPhone/>
+                <Text>Contacts</Text>
+            </MenuItem>
+            <MenuItem href='#'>
+                <FiFolder/>
+                <Text>Portfolio</Text>
+            </MenuItem>
         </View>    
     )
 }

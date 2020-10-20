@@ -21,7 +21,7 @@ function Interests(){
     return(
         <View flex w='90%' p='5px 0' alignI='center' justC='center' fD='column'>
             <View c='orange' fontSize='25px'>
-                <h1>Interests/Hobies</h1>
+                <h1>Interests/Hobbies</h1>
             </View>
             <View flex w='100%' c='white' p='5px 0' alignI='center' justC='space-around'>
                 <Item bgImg='./src/assets/images/photography.jpg'>
