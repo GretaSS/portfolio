@@ -13,6 +13,7 @@ import FrontList from '../../components/FrontList';
 import About from '../../components/About';
 import Contacts from '../../components/Contacts';
 import Menu from '../../components/Menu';
+import Education from '../../components/Education'
 
 function Home (){
     return(
@@ -22,6 +23,7 @@ function Home (){
             <FrontList/>
             <About/>
             <Contacts/>
+            <Education/>
             {/* <Cover/> */}
             {/* <Skills/> */}
             {/* <ExpEd/> */}
