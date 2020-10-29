@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from "../../styled";
 import {GoPerson} from "react-icons/go";
-import Interests from '../Interests';
+// import Interests from '../Interests';
 
 function About(){
     return(
@@ -18,7 +18,6 @@ function About(){
                     presented in Assembler programming language. It was rated excellent by the Admissions Committee․
                 </Text>
             </View>
-            <Interests/>
         </View>
     )
 }

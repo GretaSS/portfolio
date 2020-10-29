@@ -1,6 +1,7 @@
 import React from 'react'
 import {View, Text} from "../../styled";
 import styled from 'styled-components';
+import {RiPaletteLine} from "react-icons/ri"; //interests
 
 const Item = styled(View)`
     margin: 0px 5px;
@@ -19,8 +20,9 @@ const Item = styled(View)`
 
 function Interests(){
     return(
-        <View flex w='90%' p='5px 0' alignI='center' justC='center' fD='column'>
-            <View c='orange' fontSize='25px'>
+        <View flex p='5px 0' alignI='center' justC='center' fD='column'>
+            <View  flex justC='center' alignI='center' c='orange'>
+                <RiPaletteLine/>
                 <h1>Interests/Hobbies</h1>
             </View>
             <View flex w='100%' c='white' p='5px 0' alignI='center' justC='space-around'>
