@@ -18,6 +18,11 @@ const MenuItem = styled.a`
     }
 `;
 
+// const Block = styled(View)`
+//     $:hover{
+//         // menui vra pahum es sksum a ereval
+//     }
+// `;
 
 function Menu(){
     return(

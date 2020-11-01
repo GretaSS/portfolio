@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import {RiPaletteLine} from "react-icons/ri"; //interests
 
 const Item = styled(View)`
-    margin: 0px 5px;
+    margin: 5px 0px;
     padding: 23px;
+    width: 15%;
     height: 100%;
     flex: 0 1 20%;
     border-radius: 5px;
@@ -25,7 +26,14 @@ function Interests(){
                 <RiPaletteLine/>
                 <h1>Interests/Hobbies</h1>
             </View>
-            <View flex w='100%' c='white' p='5px 0' alignI='center' justC='space-around'>
+            <View flex 
+                w='100%' 
+                c='white' 
+                p='5px 0' 
+                fD='column' 
+                alignI='center' 
+                justC='space-around'
+            >
                 <Item bgImg='./src/assets/images/photography.jpg'>
                     Photography
                 </Item>

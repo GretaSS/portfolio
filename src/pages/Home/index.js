@@ -24,7 +24,7 @@ function Home (){
             <FrontList/>
             <About/>
             <Interests/>
-            <Contacts/>
+            {/* <Contacts/> */}
             <Education/>
             {/* <Cover/> */}
             {/* <Skills/> */}
