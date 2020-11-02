@@ -1,20 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
-// import ArvoItalic from '../../src/assets/fonts/Arvo-Italic.ttf';
-// import ArvoBold from '../../src/assets/fonts/Arvo-Bold.ttf';
-// import ArvoRegular from '../../src/assets/fonts/Arvo-Regular.ttf';
-// import ArvoBoldItalic from '../../src/assets/fonts/Arvo-BoldItalic.ttf';
-import Grandstander from '../../src/assets/fonts/static/Grandstander-Light.ttf';
+import Roboto from '../../src/assets/fonts/Roboto/Roboto-Light.ttf';
 
 const GlobalStyles = createGlobalStyle`
   @font-face{
-    font-family: "Play";
-    src: url(${Grandstander});
+    font-family: "Roboto";
+    src: url(${Roboto});
   }
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Play";
+    font-family: "Roboto";
   }
   html{
     scroll-behavior: smooth;
