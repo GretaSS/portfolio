@@ -1,14 +1,12 @@
 import React from 'react';
 import {View, Text} from "../../styled";
-import {GoPerson} from "react-icons/go";
 // import Interests from '../Interests';
 
 function About(){
     return(
         <View flex fD='column' justC='center' alignI='center' boxS='border-box'>
             <View w='80%' flex p='10px 0' fD='column' alignI='center'>
-                <View flex justC='center' alignI='center' c='orange'>
-                    <GoPerson/>
+                <View c='orange'>
                     <h1>About Me</h1>
                 </View>
                 <Text fontSize='18px' lh='1.65' tAlign='justify'>

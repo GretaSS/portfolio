@@ -1,7 +1,6 @@
 import React from "react";
 import {View, Text} from "../../styled";
 // import styled from "styled-components";
-import {GoMortarBoard} from "react-icons/go"; //education
 
 function Education(){
     return(
@@ -15,8 +14,7 @@ function Education(){
             bgColor='#ffb226'
         >
             <View w='80%' flex p='10px 0' fD='column' alignI='center'>
-                <View flex justC='center' alignI='center'>
-                    <GoMortarBoard/>
+                <View>
                     <h1>Education</h1>
                 </View>
                 <Text p='10px 5px' fontSize='18px' lh='1.65' tAlign='justify'>

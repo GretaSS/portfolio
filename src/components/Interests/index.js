@@ -1,7 +1,6 @@
 import React from 'react'
 import {View, Text} from "../../styled";
 import styled from 'styled-components';
-import {RiPaletteLine} from "react-icons/ri"; //interests
 
 const Item = styled(View)`
     margin: 5px 0px;
@@ -13,17 +12,18 @@ const Item = styled(View)`
     background-repeat: no-repeat;
     background-size: 100%;
     transition: .5s cubic-bezier(0.04,-0.1, 0.54, 1.12);
+    filter: grayscale(100%);
     &:hover{
         transform: scale(1.1);
         cursor: pointer;
+        filter: grayscale(0%);
     }
 `;
 
 function Interests(){
     return(
         <View flex p='5px 0' alignI='center' justC='center' fD='column'>
-            <View  flex justC='center' alignI='center' c='orange'>
-                <RiPaletteLine/>
+            <View c='orange'>
                 <h1>Interests/Hobbies</h1>
             </View>
             <View flex 
