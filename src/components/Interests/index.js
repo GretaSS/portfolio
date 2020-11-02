@@ -1,11 +1,12 @@
 import React from 'react'
 import {View, Text} from "../../styled";
 import styled from 'styled-components';
+import Ball from '../Ball';
 
 const Item = styled(View)`
     margin: 5px 0px;
     padding: 23px;
-    width: 15%;
+    width: 80%;
     height: 100%;
     flex: 0 1 20%;
     border-radius: 5px;
@@ -22,31 +23,34 @@ const Item = styled(View)`
 
 function Interests(){
     return(
-        <View flex p='5px 0' alignI='center' justC='center' fD='column'>
-            <View c='orange'>
-                <h1>Interests/Hobbies</h1>
+        <View flex p='5px 0' alignI='center' justC='center'>
+            <View flex alignI='center' justC='center' fD='column'>
+                <View c='orange'>
+                    <h1>Interests/Hobbies</h1>
+                </View>
+                <View flex 
+                    w='100%' 
+                    c='white' 
+                    p='5px 0' 
+                    fD='column' 
+                    alignI='center' 
+                    justC='space-around'
+                >
+                    <Item bgImg='./src/assets/images/photography.jpg'>
+                        Photography
+                    </Item>
+                    <Item bgImg='./src/assets/images/dr2.jpg'>
+                        Drawing
+                    </Item>
+                    <Item bgImg='./src/assets/images/bo3.jpg'>
+                        Reading Books
+                    </Item>
+                    <Item bgImg='./src/assets/images/Ph.jpg'>
+                        Photo Editing
+                    </Item> 
+                </View>
             </View>
-            <View flex 
-                w='100%' 
-                c='white' 
-                p='5px 0' 
-                fD='column' 
-                alignI='center' 
-                justC='space-around'
-            >
-                <Item bgImg='./src/assets/images/photography.jpg'>
-                    Photography
-                </Item>
-                <Item bgImg='./src/assets/images/dr2.jpg'>
-                    Drawing
-                </Item>
-                <Item bgImg='./src/assets/images/bo3.jpg'>
-                    Reading Books
-                </Item>
-                <Item bgImg='./src/assets/images/Ph.jpg'>
-                    Photo Editing
-                </Item> 
-            </View>
+            <Ball/>
         </View>
     )
 }

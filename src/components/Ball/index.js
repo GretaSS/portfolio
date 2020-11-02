@@ -1,14 +1,28 @@
 import React from 'react';
 import {View, Text} from "../../styled";
-// import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
+const step = keyframes`
+    to{
+        transform: translateY(105px);
+        color: #ececec;
+    }
+`;
+
+const Jump = styled(View)`
+    animation: ${step} 2s alternate infinite;
+`;
 
 function Ball(){
     return(
         <View flex justC='center' boxS='border-box'>
-            <View flex bgColor='yellow' bRad='10px'>
-                Ball
-            </View>
+            <Jump flex 
+                w='15px' 
+                h='15px' 
+                bRad='10px'
+                bgColor='orange' 
+            >
+            </Jump>
         </View>
     )
 }

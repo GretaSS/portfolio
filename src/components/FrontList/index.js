@@ -1,7 +1,6 @@
 import React from "react";
 import {View, Text} from "../../styled";
 import styled, { keyframes } from "styled-components";
-// import Ball from '../Ball';
 
 const scr = keyframes`
     to{
